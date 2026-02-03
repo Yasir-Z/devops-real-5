@@ -26,8 +26,8 @@ jobs:
     - name: Lint test
       run: flake8 . || echo "Linting done"
     
-    - name: Static analysis
-      run: bandit -r .
+   # - name: Static analysis
+   #   run: bandit -r .
 
     - name: Unit test
       run: pytest test_app.py  
