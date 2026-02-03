@@ -21,7 +21,7 @@ jobs:
         run: pip install -r requirements.txt
 
       - name: Code formatting check
-        run: black --check .
+        run: black --check .  #formatting done locally
 
       - name: Lint
         run: flake8 .
