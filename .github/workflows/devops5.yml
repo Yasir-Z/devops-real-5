@@ -27,7 +27,7 @@ jobs:
       run: flake8 . || echo "Linting done"
     
     - name: Static analysis
-      run: bandit -r . --skip B101,B102,B104
+      run: bandit -r .
 
     - name: Unit test
       run: pytest test_app.py  
